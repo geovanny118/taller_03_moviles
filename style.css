@@ -1,0 +1,8 @@
+.answer-container {
+    text-align: center;
+}
+
+#answerStructureIf, #answerStructureIfElse {
+    display: none;
+    color: red;
+}

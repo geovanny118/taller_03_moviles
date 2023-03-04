@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller 3</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="selective.html"
+                >Estructura Selectivas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="iteractive.html"
+                >Esctructuras Iteractivas</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Estructuras Selectivas</h1>
+      <div>
+        <p>
+          <strong
+            >Se definen como una estructura que permite controlar de cierto modo
+            el flujo de una acción o de acciones del programa</strong
+          >, ayudando a que el desarrollo de la lógica de programación sea de
+          manera optima.
+          <br />
+          <br />
+          Esto quiere decir, en otras palabras, que una estructura selectiva es
+          la encargada de dirigir la ejecución de un programa que tiene como
+          objetivo los grupos de sentencias del resultado de la condición.
+        </p>
+      </div>
+      <br />
+      <section>
+        <h2>Estructura IF</h2>
+        <div>
+          <p>
+            La estructura más utilizada en JavaScript y en la mayoría de
+            lenguajes de programación es la estructura if. Se emplea para tomar
+            decisiones en función de una condición. Su definición formal es:
+          </p>
+          <p>
+            Si la condición se cumple (es decir, si su valor es true) se
+            ejecutan todas las instrucciones que se encuentran dentro de {...}.
+            Si la condición no se cumple (es decir, si su valor es false) no se
+            ejecuta ninguna instrucción contenida en {...} y el programa
+            continúa ejecutando el resto de instrucciones del script.
+          </p>
+          <div class="answer-container">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="structureIf(true)"
+            >
+              Mostrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="structureIf(false)"
+            >
+              Ocultar
+            </button>
+            <div id="answerStructureIf">
+              <h3>mensaje oculto</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Estructura IF - Else</h2>
+        <div>
+          <p>
+            La estructura más utilizada en JavaScript y en la mayoría de
+            lenguajes de programación es la estructura if. Se emplea para tomar
+            decisiones en función de una condición. Su definición formal es:
+          </p>
+          <p>
+            Si la condición se cumple (es decir, si su valor es true) se
+            ejecutan todas las instrucciones que se encuentran dentro de {...}.
+            Si la condición no se cumple (es decir, si su valor es false) no se
+            ejecuta ninguna instrucción contenida en {...} y el programa
+            continúa ejecutando el resto de instrucciones del script.
+          </p>
+          <div class="answer-container">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="structureIfElse(true)"
+            >
+              Mostrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="structureIfElse(false)"
+            >
+              Ocultar
+            </button>
+            <div id="answerStructureIfElse">
+              <h3>mensaje oculto</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
