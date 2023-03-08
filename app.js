@@ -161,5 +161,3 @@ generateFood();
 
 // Iniciar el loop del juego
 gameLoop();
-
-// Iniciar el loop del juego
