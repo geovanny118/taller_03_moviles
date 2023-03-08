@@ -156,41 +156,6 @@ document.addEventListener("keydown", function (event) {
 });
 
 
-// Función para guardar la puntuación en Firebase
-function saveScoreToFirebase(uuid, score) {
-
-}
-
-// Función para finalizar el juego
-function endGame() {
-
-
-    // Guardar la puntuación en Firebase
-    const uuid = "A11212122121"+Math.floor(Math.random() *+Date.now());
-    saveScoreToFirebase(uuid, score);
-
-    // Mostrar un mensaje de fin de juego y reiniciar
-    alert("Game over! Score: " + score);
-    resetGame();
-}
-
-// Función para reiniciar el juego
-function resetGame() {
-    snake = [
-        { x: 25, y: 25 },
-        { x: 24, y: 25 },
-        { x: 23, y: 25 },
-    ];
-    score = 0;
-    direction = "right";
-    gameOver = false;
-    generateFood();
-
-// Iniciar el loop del juego
-    gameLoop();
-
-}
-
 // Generar comida inicial
 generateFood();
 
