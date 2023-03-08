@@ -1,46 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taller 3</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="selective.html">Estructura Selectivas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="iteractive.html">Esctructuras Iteractivas</a>
-                    </li>
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="selective.html"
+                >Estructura Selectivas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="iteractive.html"
+                >Esctructuras Iteractivas</a
+              >
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="juego.html">que se puede ehacer juntando ambas estructuras?</a>
-                    </li>
-
-                </ul>
-            </div>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="juego.html"
+                >que se puede ehacer juntando ambas estructuras?</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <div class="container">
-        <h1>Estructuras iteractivas</h1>
+      <h1>Estructuras iteractivas</h1>
+      <div>
+        <p>
+          Estructura iterativa que indica un conjunto de instrucciones que se
+          deben de repetir mientras que la respuesta a la expresión que se
+          coloca dentro del símbolo de decisión sea VERDADERA, por lo tanto
+          cuando la respuesta a la condición sea FALSA se continúa con la
+          siguiente instrucción es decir sale del ciclo.
+        </p>
+      </div>
+
+      <br />
+      <section>
+        <h2>Estructura For</h2>
+        <div>
+          <p>
+            Crea un bucle que consiste en tres expresiones opcionales,
+            encerradas en paréntesis y separadas por puntos y comas, seguidas de
+            una sentencia ejecutada en un bucle.
+          </p>
+          <div class="answer-container">
+            <figure>
+              <img
+                src="images/img-04.png"
+                alt="example structure for"
+                width="700"
+              />
+            </figure>
+          </div>
+          <div class="answer-container">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="structureFor(2)"
+            >
+              factorial 2
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="structureFor(3)"
+            >
+              factorial 3
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="structureFor(4)"
+            >
+              factorial 4
+            </button>
+            <div>
+              <h3 id="answerFor"></h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Estructura While</h2>
+        <div>
+          <p>
+            Crea un bucle que ejecuta una sentencia especificada mientras cierta condición se evalúe como verdadera. Dicha condición
+            es evaluada antes de ejecutar la sentencia
+          </p>
+          <div class="answer-container">
+            <figure>
+              <img
+                src="images/img-05.png"
+                alt="example structure for"
+                width="700"
+              />
+            </figure>
+          </div>
+          <div class="answer-container">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="structureWhile(10)"
+            >
+              count
+            </button>
+            <div>
+              <h3 id="answerWhile"></h3>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -11,7 +11,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -39,7 +39,9 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="juego.html">Que se puede hacer juntando ambas estructuras?</a>
+              <a class="nav-link" aria-current="page" href="juego.html"
+                >Que se puede hacer juntando ambas estructuras?</a
+              >
             </li>
           </ul>
         </div>
@@ -70,6 +72,15 @@
             lenguajes de programación es la estructura if. Se emplea para tomar
             decisiones en función de una condición. Su definición formal es:
           </p>
+          <div class="answer-container">
+            <figure>
+              <img
+                src="images/img-01.png"
+                alt="example structure if"
+                width="700"
+              />
+            </figure>
+          </div>
           <p>
             Si la condición se cumple (es decir, si su valor es true) se
             ejecutan todas las instrucciones que se encuentran dentro de {...}.
@@ -106,6 +117,15 @@
             lenguajes de programación es la estructura if. Se emplea para tomar
             decisiones en función de una condición. Su definición formal es:
           </p>
+          <div class="answer-container">
+            <figure>
+              <img
+                src="images/img-02.png"
+                alt="example structure if"
+                width="700"
+              />
+            </figure>
+          </div>
           <p>
             Si la condición se cumple (es decir, si su valor es true) se
             ejecutan todas las instrucciones que se encuentran dentro de {...}.
@@ -130,6 +150,38 @@
             </button>
             <div id="answerStructureIfElse">
               <h3>mensaje oculto</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Estructura Switch</h2>
+        <div>
+          <p>
+          La declaración switch evalúa una expresión, comparando el valor de esa expresión con una instancia case, y ejecuta
+          declaraciones asociadas a ese case, así como las declaraciones en los case que siguen.
+          </p>
+          <div class="answer-container">
+            <figure>
+              <img src="images/img-03.png" alt="example structure if" width="700" />
+            </figure>
+          </div>
+          <p>
+            <strong> Si olvidas un break, el script se ejecutará desde donde se cumple la condición y ejecutará el siguiente case
+            independientemente si esta condición se cumple o no.</strong>
+          </p>
+          <div class="answer-container">
+            <button type="button" class="btn btn-danger" onclick="structureSwitchCase('red')">
+              Rojo
+            </button>
+            <button type="button" class="btn btn-success" onclick="structureSwitchCase('green')">
+              Verde
+            </button>
+            <button type="button" class="btn btn-primary" onclick="structureSwitchCase('blue')">
+              Azul
+            </button>
+            <div id="answerStructureSwitch">
+              <h3>color texto segun estructura switch</h3>
             </div>
           </div>
         </div>
